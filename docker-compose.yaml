@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  ai-issue-mgmnt-frontend:
+  ai-issue-mngmt-frontend:
     build: 
       context: frontend
       dockerfile: Dockerfile.dev
@@ -10,8 +10,8 @@ services:
     ports:
       - 3000:3000
     depends_on:
-      - ai-issue-mgmnt-backend
-  ai-issue-mgmnt-backend:
+      - ai-issue-mngmt-backend
+  ai-issue-mngmt-backend:
     build:
       context: backend
       dockerfile: Dockerfile.dev
