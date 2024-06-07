@@ -16,7 +16,6 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>frontend</module>
 		<module>api</module>
 	</modules>
 

@@ -1,0 +1,11 @@
+FROM maven:3.8.3-amazoncorretto-17
+
+WORKDIR /backend
+
+COPY . /backend
+
+RUN mvn clean install
+
+WORKDIR /backend/api
+
+CMD ["mvn", "spring-boot:run"]
